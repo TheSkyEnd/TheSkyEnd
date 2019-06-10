@@ -1,0 +1,499 @@
+/*
+
+	Design by Free CSS Templates
+	http://www.freecsstemplates.org
+	Released for free under a Creative Commons Attribution License
+
+	Name       : Eponymous
+	Version    : 1.0
+	Released   : 20130222
+	
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #d43535;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	font-size: 12pt;
+	line-height: 1.75em;
+	font-family: Arial, sans-serif;
+	background: #030707 url('../images/bg.jpg');
+	color: #c0c1c1;
+}
+
+br.clear {
+	clear: both;
+}
+
+h2,h3,h4 {
+	margin-bottom: 1em;
+	font-family: Arvo, serif;
+	color: #ffffff;
+}
+
+img.left {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+img.top {
+	margin: 5px 0 20px 0;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+ul {
+	margin-bottom: 1.5em;
+}
+
+.imageList {
+	list-style: none;
+}
+
+.imageList li {
+	clear: both;
+}
+.wrapper {
+	height: 700px;
+	margin: 100px auto 0;
+	position: relative;
+	width: 700px;
+}
+
+.slider {
+	background-color: #ddd;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+
+.slides {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+	background-size: cover;
+}
+
+.slide1 { background-image: url(); }
+.slide2 { background-image: url(); }
+.slide3 { background-image: url(); }
+.slide4 { background-image: url(); }
+.slide5 { background-image: url(); }
+
+.wrapper .controls {
+	left: 50%;
+	margin-left: -98px;
+	position: absolute;
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.wrapper label:after {
+	border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+	background: #ddd;
+}
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+	
+#bg {
+	background: url('../images/shadow.png') top left repeat-x;
+	padding: 60px 0 80px 0;
+}
+
+#banner {
+	position: relative;
+	padding: 30px;
+	height: 200px;
+	width: 1120px;
+	margin: 0px 0 0 0;
+	background: #ffffff;
+}
+
+#box1 {
+	margin: 0px 0 25px 0;
+	overflow: hidden;
+}
+
+#box2 {
+	margin: 0px 0 25px 0;
+	overflow: hidden;
+}
+
+#content {
+	width: 855px;
+	margin: 0px 0 0 265px;
+	padding: 30px;
+	background: #ffffff;
+}
+
+#copyright {
+	margin: 40px 0 0 0;
+	text-align: center;
+	color: #707070;
+	font-size: 0.9em;
+}
+
+#copyright a {
+	color: #888888;
+}
+
+
+#footer a {
+	color: #e2f2f8;
+}
+
+#footer h2, #footer h3, #footer h4 {
+	color: #ffffff;
+}
+
+#footer ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+#footer p {
+	margin-bottom: 0;
+}
+
+#footer ul li {
+	padding: 10px 0 10px 0;
+	border-top: dashed 1px #6dbfda;
+}
+
+#footer ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+
+#footerContent {
+	width: 855px;
+	margin: 0px 0 0 265px;
+}
+
+#footerSidebar {
+	width: 180px;
+	float: left;
+}
+
+#header {
+	position: relative;
+	padding: 30px;
+	height: 80px;
+	width: 1120px;
+}
+
+#logo {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	height: 80px;
+	line-height: 80px;
+	letter-spacing: -1px;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#logo h1 {
+	font-size: 2.75em;
+	font-family: Arvo, serif;
+}
+
+#main {
+	position: relative;
+	padding: 0px;
+	margin: 30px 0 0 0;
+	width: 1180px;
+	color: #6b6b6b;
+}
+
+#main a {
+	color: #262626;
+}
+
+#main strong {
+	color: #404040;
+}
+
+#main h2, #main h3, #main h4 {
+	color: #141414;
+}
+
+#main ul {
+	list-style: none;
+}
+
+#main ul li {
+	padding: 10px 0 10px 0;
+	border-top: dashed 1px #bfbfbf;
+}
+
+#main ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+#outer {
+	position: relative;
+	width: 1180px;
+	margin: 0 auto;
+}
+
+#search input.button {
+	margin-left: 1em;
+	border: 0px;
+	color: #ffffff;
+	background: #d43535;
+	padding: 6px;
+}
+
+#search input.text {
+	border: dashed 1px #ffffff;
+	padding: 5px;
+}
+
+#sidebar {
+	width: 180px;
+	float: left;
+	padding: 30px;
+	color: #ffffff;
+}
+
+#sidebar a {
+	color: #8b1a1a;
+}
+
+#sidebar h2, #sidebar h3, #sidebar h4 {
+	color: #ffffff;
+}
+
+#sidebar ul {
+	list-style: none;
+}
+
+#sidebar ul li {
+	padding: 10px 0 10px 0;
+	border-top: dashed 1px #424545;
+}
+
+#sidebar ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+#form{
+    border: 1px solid #D3D3D3;
+    background: none repeat scroll 0 0 #FFFFFF;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    -webkit-box-shadow: 0 0 5px #CCCCCC, 1px 1px 0 #FFFFFF inset, -1px -1px 0 #FFFFFF inset, 0 0 15px #DDDDDD inset;
+    -moz-box-shadow: 0 0 5px #CCCCCC, 1px 1px 0 #FFFFFF inset, -1px -1px 0 #FFFFFF inset, 0 0 15px #DDDDDD inset;
+    box-shadow: 0 0 5px #CCCCCC, 1px 1px 0 #FFFFFF inset, -1px -1px 0 #FFFFFF inset, 0 0 15px #DDDDDD inset;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 10px;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+}
+#form h2{
+/* оформляем заголовок формы
+ ** цвет, размер и семейство шрифта */         
+    border-bottom: 1px dashed #CCCCCC;
+    color: #3F647F;
+    font: 24px Monotype Corsiva,Arial;
+    margin: 10px 26px;
+    padding: 0 5px 10px 0;
+/* добавляем тени к тексту */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	}
+#form fieldset{
+/* формируем блоки элементов внутри формы */
+    margin:0;
+    padding:0;
+    border:none;	
+    float:left;
+    display:inline;
+    margin-left:26px;
+}
+/* формируем подписи к полям ввода */	
+#form label{display:block;color:#5B5B5B;margin-bottom:1px;}	
+#form input, #form textarea{
+    font:13px Trebuchet MS, Arial, Helvetica, Sans-Serif;
+    color:#6B6B6B;
+/* отключаем бордюры у инпутов и текстового поля */
+    border: none;
+/* закругляем углы полей ввода */
+    -moz-border-radius:.3em;
+    -webkit-border-radius:.3em;
+    border-radius:.3em;		
+    background-color: #F7F7F7;
+    padding:3px;
+/* добавляем внутренние тени у инпутов и текстового поля */
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+    color: #5B5B5B;
+}
+#form input {
+/* устанавливаем ширину инпутов */
+    width:224px;
+}
+/* изменяем оформление полей ввода при фокусе */
+#form input:focus, #form textarea:focus {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+    background: #F2F2F2;
+    color: #333;
+}
+#form textarea{
+/* устанавливаем ширину текстового поля */
+    width:286px;
+    height:120px;
+    overflow:auto;
+}
+/* формируем нижний сектор формы */					
+#form submit{
+    clear:both;
+    padding: 0px 25px 20px;
+    margin:0;
+    float:bottom;
+}
+/* оформляем кнопку отправки */	
+#form button{
+/* устанавливаем необходимую ширину кнопки */
+    width:120px;
+    line-height:28px;
+/* добавляем внешние тени */
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    border: solid 1px #2f96b4;
+/* закругляем углы кнопки */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #49AFCD;
+/* градиентная заливка для современных браузеров */	
+    background-image:-moz-linear-gradient(center top , #5BC0DE, #2F96B4);
+    background-image: -webkit-linear-gradient(center top, #5bc0de, #2f96b4);
+    background-image: -ms-linear-gradient(#5bc0de, #2f96b4);
+    background-image:-o-linear-gradient(center top , #5BC0DE, #2F96B4);
+    color:#fff;
+    cursor:pointer;
+    text-align:center;
+/* градиент для IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#5BC0DE', EndColorStr='#2F96B4', GradientType=0); 
+}
+/* изменяем оформление кнопки при наведении */
+#form button:hover {
+    border-color: #2C8BA5;
+    box-shadow: none;
+}
+/* изменяем оформление кнопки при нажатии */
+#form button:active {
+    background-image:-moz-linear-gradient(#2F96B4, #5BC0DE); /* Firefox */
+    background-image: -webkit-linear-gradient(#2F96B4, #5BC0DE); /* Chrome, Safari */
+    background-image: -ms-linear-gradient(#2F96B4, #5BC0DE); /* IE-10 */
+    background-image:-o-linear-gradient(#2F96B4, #5BC0DE); /* Opera */
+    border-bottom: 1px solid #5BC0DE;
+/* добавляем внутренние тени */
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+/* градиент для IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#2F96B4', EndColorStr='#5BC0DE', GradientType=0);
+}

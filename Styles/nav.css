@@ -1,0 +1,30 @@
+#nav {
+	position: absolute;
+	right: 30px;
+	height: 48px;
+	top: 55px;
+	font-family: Arvo, serif;
+	font-size: 1.1em;
+}
+
+#nav ul {
+	list-style: none;
+}
+
+#nav ul li {
+	float: left;
+	margin: 0 0.5em 0 0.5em;
+	padding: 0.25em 1.1em 0.25em 1.1em;
+}
+
+
+
+#nav li a {
+	text-decoration: none;
+	color: #d9dada;
+}
+
+#nav ul li.active a {
+	color: #ffffff;
+}
+	

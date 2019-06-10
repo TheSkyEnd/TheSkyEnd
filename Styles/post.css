@@ -1,0 +1,21 @@
+
+.post_title {
+	font-family: cursive;
+	margin-bottom: 10px;
+}
+
+.post_text {
+	text-align: justify;
+}
+
+.post_image {
+	
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 150px;
+	height: 200px;
+	float: left;
+	
+	border: 5px;
+	border-radius: 2px;
+}
